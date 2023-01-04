@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Restaurante Stone Web",
+    "description": "Una página web desplegada en GitHub Pages del menú del Restaurante Stone usando HTML, CSS Y Bootstrap ",
+    "links": {
+      "github": "https://github.com/JoseDv1/Restaurante-Stone",
+      "demo": "https://josedv1.github.io/Restaurante-Stone/"
+    }
+  },
+  {
+    "name": "Portfolio Web App",
+    "description": "Una página web desarrollada con next.js para guardar proyectos. Utiliza Firebase como Backend para autenticar usuarios y guardar sus proyectos en una base de datos",
+    "links": {
+      "github": "https://github.com/JoseDv1/portfolio-web-josedv1",
+      "demo": "https://portfolio-web-josedv1.vercel.app/"
+    }
+  },
+  {
+    "name": "Clon de Google HTML, CSS",
+    "description": "Una página web desarrollada con HTML, CSS Y Bootstrap para mostrar mis proyectos y habilidades",
+    "links": {
+      "github": "https://github.com/JoseDv1/Google-Clon-HTML-CSS",
+      "demo": "https://josedv1.github.io/Portfolio/"
+    }
+  }
+]
