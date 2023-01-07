@@ -29,6 +29,18 @@ export function Footer({ theme, social, contact, brand }) {
             </li>
           </ul>
         </section>
+
+        <section className="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href={`mailto: ${contact.email}`}> {contact.email} </a>
+            </li>
+            <li>
+              <a href={`tel: ${contact.phone}`}> {contact.phone} </a>
+            </li>
+          </ul>
+        </section>
       </footer>
 
       <style jsx>{`
@@ -36,7 +48,6 @@ export function Footer({ theme, social, contact, brand }) {
           background-color: ${theme.background};
           color: ${theme.color};
           height: max-content;
-          width: 100%;
 
           bottom: 0;
           left: 0;

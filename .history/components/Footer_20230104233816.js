@@ -29,14 +29,13 @@ export function Footer({ theme, social, contact, brand }) {
             </li>
           </ul>
         </section>
-      </footer>
+
 
       <style jsx>{`
         footer {
           background-color: ${theme.background};
           color: ${theme.color};
           height: max-content;
-          width: 100%;
 
           bottom: 0;
           left: 0;

@@ -36,7 +36,7 @@ export function Footer({ theme, social, contact, brand }) {
           background-color: ${theme.background};
           color: ${theme.color};
           height: max-content;
-          width: 100%;
+          width: 100vw;
 
           bottom: 0;
           left: 0;

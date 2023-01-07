@@ -36,7 +36,6 @@ export function Footer({ theme, social, contact, brand }) {
           background-color: ${theme.background};
           color: ${theme.color};
           height: max-content;
-          width: 100%;
 
           bottom: 0;
           left: 0;
@@ -45,7 +44,10 @@ export function Footer({ theme, social, contact, brand }) {
           padding: 20px 0;
 
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          align-items: center;
+
           justify-content: center;
           place-items: center;
         }
@@ -64,7 +66,15 @@ export function Footer({ theme, social, contact, brand }) {
           border-radius: 50%;
         }
 
-        section ul {
+        section.social {
+          margin: 0 20px;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          flex-direction: column;
+        }
+
+        section.social ul {
           display: flex;
           gap: 10px;
 
@@ -73,12 +83,29 @@ export function Footer({ theme, social, contact, brand }) {
           margin: 0;
         }
 
-        section h3 {
+        section.social h3 {
           margin: 5px 0;
         }
 
-        section li {
+        section.contact h3 {
           margin: 5px 0;
+        }
+
+        section.social li {
+          margin: 5px 0;
+        }
+
+        section.contact li {
+          margin: 5px 0;
+        }
+
+        section.contact ul {
+          display: flex;
+          gap: 10px;
+
+          list-style: none;
+          padding: 5px 0;
+          margin: 0;
         }
 
         a {

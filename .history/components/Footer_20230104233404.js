@@ -36,7 +36,6 @@ export function Footer({ theme, social, contact, brand }) {
           background-color: ${theme.background};
           color: ${theme.color};
           height: max-content;
-          width: 100%;
 
           bottom: 0;
           left: 0;
@@ -62,6 +61,14 @@ export function Footer({ theme, social, contact, brand }) {
           height: 100%;
           width: 100px;
           border-radius: 50%;
+        }
+
+        section.social {
+          margin: 0 20px;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          flex-direction: column;
         }
 
         section ul {
