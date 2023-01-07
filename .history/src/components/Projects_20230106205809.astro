@@ -1,0 +1,27 @@
+---
+---
+
+<section id="Projects">
+  {
+    projects.map((project, index) => (
+      <article key={index}>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <div className="links">
+          {project.links.github && (
+            <a className="github" href={project.links.github}>
+              <img src="images/github.png" alt="Github" />
+              <p> GitHub</p>
+            </a>
+          )}
+          {project.links.demo && (
+            <a className="demo" href={project.links.demo}>
+              <img src="images/demo.png" alt="Demo" />
+              <p> Demo </p>
+            </a>
+          )}
+        </div>
+      </article>
+    ))
+  }
+</section>

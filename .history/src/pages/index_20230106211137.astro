@@ -1,0 +1,65 @@
+---
+import AboutMe from "../components/AboutMe.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Projects from "../components/Projects.astro";
+import projectsList from "../data/projects.json";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const theme = { background: "#000000", color: "#ffffff" };
+const social = [
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/JoseDv23",
+    icon: "facebook.svg",
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/Jose_Dv1",
+    icon: "twitter.svg",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/jose_dv1/",
+    icon: "instagram.svg",
+  },
+  {
+    name: "Github",
+    url: "https://github.com/JoseDv1",
+    icon: "github.svg",
+  },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/josedv1",
+    icon: "linkedin.svg",
+  },
+];
+const brand = { name: "JoseDv1 Web", logo: "images/logo.jpg" };
+const links = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
+    name: "About Me",
+    url: "#AboutMe",
+  },
+  {
+    name: "Projects",
+    url: "#Projects",
+  },
+];
+
+const contact = {
+  phone: "+57 3103652785",
+  email: "Jose123millon@gmail.com",
+};
+---
+
+<BaseLayout pageTitle="AboutMe">
+  <Navbar theme={theme} brand={brand} links={links} search={false} />
+  <AboutMe />
+  <Projects projects={projectsList} />
+  <Footer theme={theme} brand={brand} social={social} contact={contact} />
+</BaseLayout>

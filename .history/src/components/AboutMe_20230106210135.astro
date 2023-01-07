@@ -1,0 +1,84 @@
+---
+const { theme: Object = { background: "#ffffff", color: "#000000" } } =
+  Astro.props;
+---
+
+<section id="AboutMe">
+  <img
+    src="https://scontent.fpei2-1.fna.fbcdn.net/v/t39.30808-6/316949404_2267803410057588_3364507974718712080_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHWZBdN1cIzQDtZxVEcoxBJiUAEjlpJX06JQASOWklfThHUHC3WPn47QYQv_CLOA6xcw_bRfIPGJrqZwPO_ZI_-&_nc_ohc=MdJDHrhx-UMAX9t3Lhp&_nc_ht=scontent.fpei2-1.fna&oh=00_AfAjnxoYJq8WtkNSNg48NrHEFLqROZZrZ7De0rQGWuHDlA&oe=63BE046C"
+    alt="JoseDv1"
+  />
+  <article>
+    <h1>About Me</h1>
+    <p>
+      Soy un joven de 19 años apasionado por la programación y el desarrollo
+      web. También disfruto de los videojuegos y estoy siempre buscando aprender
+      más sobre tecnología, blockchain, desarrollo web, Desarrollo de
+      videojuegos, Ciencia de datos, Machine Learning, Economía, Inversiones y
+      nuevas habilidades.
+    </p>
+
+    <p>
+      Además de mis intereses en la informática, Soy dueño de mi propio bar, lo
+      que me ha dado una amplia gama de habilidades empresariales y de liderazgo
+    </p>
+    <p>
+      Me encanta trabajar en equipo y aprender de los demás, así que no dudes en
+      contactarme si quieres trabajar en un proyecto juntos.
+    </p>
+    <p>
+      Esta es mi pagina web personal, donde comparto mis proyectos y
+      experiencias. Espero que te guste.
+    </p>
+    <p>
+      Tengo conocimientos en HTML, CSS, JavaScript, React, Next.js, Node.js,
+      express, python, C#, MongoDB, Git, Github, Bootstrap
+    </p>
+  </article>
+</section>
+
+<style define:vars={theme}>
+  section {
+    background: var(--background);
+    color: var(--color);
+    background-image: url("../public/images/noise.png");
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    justify-content: center;
+    place-items: center;
+
+    margin: 20px 50px 50px;
+    padding: 50px 20px;
+    height: fit-content;
+    width: fit-content;
+    border: 5px solid #000000;
+    border-radius: 5rem;
+  }
+  section img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    box-shadow: 0px 15px 20px #000;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 5px 5px 20px #000;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+</style>

@@ -1,0 +1,24 @@
+---
+const { theme, links, search, brand } = Astro.props;
+---
+
+<nav>
+  <section>
+    <a href="#">
+      {brand.logo && <img src={brand.logo} alt={brand.name} />}
+      <h1>{brand.name}</h1>
+    </a>
+  </section>
+
+  {search && <input type="text" placeholder="Search" />}
+
+  <ul>
+    {
+      links.map((link, index) => (
+        <li key={index}>
+          <a href={link.url}>{link.name}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

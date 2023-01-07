@@ -1,0 +1,34 @@
+---
+---
+
+<footer>
+  <section className="brand">
+    <img src={brand.logo} alt={brand.name} />
+    <h3>{brand.name}</h3>
+  </section>
+
+  <section className="social">
+    <h3>Social</h3>
+    <ul>
+      {
+        social.map((item, index) => (
+          <li key={index}>
+            <a href={item.url}> {item.name} </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section className="contact">
+    <h3>Contact</h3>
+    <ul>
+      <li>
+        <a href={`mailto: ${contact.email}`}> {contact.email}</a>
+      </li>
+      <li>
+        <a href={`tel: ${contact.phone}`}> {contact.phone}</a>
+      </li>
+    </ul>
+  </section>
+</footer>
